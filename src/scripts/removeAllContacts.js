@@ -7,5 +7,4 @@ export const removeAllContacts = async () => {
 };
 
 removeAllContacts()
-  .then((data) => console.log(data))
   .catch((error) => console.error(error));

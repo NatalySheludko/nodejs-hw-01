@@ -7,12 +7,11 @@ export const removeLastContact = async () => {
 
   if (contacts.length > 0) {
     contacts.pop();
-    await fs.writeFile(PATH_DB, JSON.stringify(contacts, undefined, 2));
+		await fs.writeFile(PATH_DB, JSON.stringify(contacts, undefined, 2));
   } else {
     console.log('No contacts to remove.');
   }
 };
 
 removeLastContact()
-  .then((data) => console.log(data))
   .catch((error) => console.error(error));
