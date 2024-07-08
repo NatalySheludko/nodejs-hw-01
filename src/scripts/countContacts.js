@@ -8,5 +8,4 @@ export const countContacts = async () => {
 };
 
 countContacts()
-  .then((data) => console.log(data))
   .catch((error) => console.error(error));
